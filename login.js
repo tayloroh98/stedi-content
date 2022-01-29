@@ -26,7 +26,7 @@ function userlogin(){
     $.ajax({
         type: 'POST',
         url: '/login',
-        data: ' {"userName":"'+ userName +'", "password":"'+ password +'"}', // or JSON.stringify ({name: 'jonas'}),
+        data: ' {"userName":"'+ phone +'", "password":"'+ password +'"}', // or JSON.stringify ({name: 'jonas'}),
         success: function(data) {
             savetoken(data);
             localStorage.removeItem("customer");
